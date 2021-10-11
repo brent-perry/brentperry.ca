@@ -32,12 +32,12 @@ export default css`
 	}
 
 	a:hover, .subnav span:hover {
-		color: #009bff;
+		text-decoration: underline #0fbb0f 3px;
 	}
 
 	li:hover {
 		cursor: pointer;
-		color: #009bff;
+		text-decoration: underline #0fbb0f 3px;
 	}
 
 	a {
@@ -45,7 +45,7 @@ export default css`
 		letter-spacing: 2px;
 		text-decoration: none;
 		font-size: 1.4em;
-		color: #989086;
+		color: #0fbb0f;
 		width: 100%;
 		padding: 1em;
 	}

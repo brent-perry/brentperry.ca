@@ -5,7 +5,7 @@ export default css`
 	}
 	
 	footer {
-		border-top: solid #adaabd 1px;
+		border-top: solid #0fbb0f 1px;
 		display: flex;
 		background-color: #18181a;
 		padding: 3em;
@@ -39,7 +39,6 @@ export default css`
 	}
 
 	a:hover {
-		color: #009bff;
-		cursor: pointer;
+		text-decoration: underline #0fbb0f 3px;
 	}
 `
