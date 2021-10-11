@@ -15,16 +15,16 @@ export class BpHeader extends LitElement {
 					<nav>
 						<ol>
 							<li>
-								<a href="/index">Gallery</a>
+								<a href="/index">Home</a>
 							</li>
 							<li>
-								<a href="/pages/about">About</a>
+								<a href="">Terminal</a>
 							</li>
 							<li>
-								<a href="">Linkedin</a>
+								<a href="https://www.linkedin.com/in/brent-perry-5b17761a2/">Linkedin</a>
 							</li>
 							<li>
-								<a href="">Discord</a>
+								<a href="https://discordapp.com/users/#1039">Discord</a>
 							</li>
 						</ol>
 					</nav>

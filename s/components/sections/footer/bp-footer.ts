@@ -11,9 +11,9 @@ export class BpFooter extends LitElement {
 					<p>© All rights reserved</p>
 				</div>
 				<div>
-					<a href=""><img src="" />Discord</a>
-					<a href=""><img src="" />Email</a>
-					<a href=""><img src="" />Linkedin</a>
+					<a href="https://discordapp.com/users/#1039">Discord</a>
+					<a href="mailto:brentperry92@gmail.com">Email</a>
+					<a href="https://www.linkedin.com/in/brent-perry-5b17761a2/">Linkedin</a>
 				</div>
 				<div>
 					<a href="#to-top">Back to top</a>
