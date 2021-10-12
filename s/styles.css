@@ -88,6 +88,12 @@ image-modal {
 
 /* BRENT WORK */
 
+.featured_content {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
 .project_wrapper {
 	display: flex;
 	justify-content: center;
