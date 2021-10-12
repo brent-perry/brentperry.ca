@@ -26,7 +26,10 @@ export default css`
 		position: absolute;
 		z-index: 1;
 		opacity: 0;
-		font-size: 1.8rem;
+		font-size: 1em;
+		background-color: #757171c1;
+		border-radius: 8px;
+		padding: 8px;
 	}
 
 	img {

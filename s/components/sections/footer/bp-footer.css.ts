@@ -5,16 +5,9 @@ export default css`
 	}
 	
 	footer {
-		border-top: solid #0fbb0f 1px;
 		display: flex;
-		background-color: #18181a;
 		padding: 3em;
 		justify-content: space-between;
-	}
-
-	div {
-		width: 33.33%;
-		display: flex;
 	}
 
 	div:nth-of-type(2) a{
@@ -33,12 +26,12 @@ export default css`
 
 	a, p {
 		letter-spacing: .1rem;
-		color: #adaabd;
+		color: #ffffff;
 		width: 100%;
 		margin: 4px;
 	}
 
 	a:hover {
-		text-decoration: underline #0fbb0f 3px;
+		text-decoration: underline #3970d6 3px;
 	}
 `
