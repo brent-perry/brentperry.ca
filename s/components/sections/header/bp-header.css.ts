@@ -11,7 +11,6 @@ export default css`
 	nav {
 		display: flex;
 		justify-content: center;
-		padding: 3em;
 	}
 
 	ol {
