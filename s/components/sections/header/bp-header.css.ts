@@ -24,7 +24,7 @@ export default css`
 	}
 
 	h1 {
-		color: #3970d6;
+		color: #202020;
 		font-weight: 900;
 		line-height: 2rem;
 		letter-spacing: 2px;
@@ -35,7 +35,7 @@ export default css`
 	}
 
 	a:hover {
-		text-decoration: underline #3970d6 10px;
+		text-decoration: underline #202020 10px;
 	}
 
 	a {

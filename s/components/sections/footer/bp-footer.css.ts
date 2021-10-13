@@ -6,7 +6,7 @@ export default css`
 	
 	footer {
 		display: flex;
-		padding: 3em;
+		padding: 2em;
 		justify-content: space-between;
 	}
 
@@ -32,6 +32,15 @@ export default css`
 	}
 
 	a:hover {
-		text-decoration: underline #3970d6 3px;
+		text-decoration: underline #202020 3px;
 	}
+
+	@media screen and (max-width: 713px) {
+		footer {
+			flex-direction: column-reverse;
+	}
+		div {
+			margin-top: 1em;
+		}
+  }
 `
