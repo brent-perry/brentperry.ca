@@ -5,19 +5,23 @@ export default css`
 	}
 
 	nav {
+		right: -100%;
 		position: fixed;
 		width: 100%;
-		height: 100vh;
-		background: #075cbd;
+		height: 100%;
+		background: #000000;
 		z-index: 2;
-		top: -100vh;
-		left: 0;
-		display: flex;
+		display: none;
 		justify-content: center;
 		text-align: center;
-		align-items: center;
-		display: none;
-		transition: 1s;
+		align-items: center;	
+		transition: right 1s;
+	}
+
+	nav[data-open] {
+		display: flex;
+		right: 0;
+		transition: right 1s;
 	}
 
 	li {
@@ -38,7 +42,7 @@ export default css`
 		content: '';
 		height: 3px;
 		width: 0;
-		background: #eea16d;
+		background: #ff0095;
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -49,29 +53,19 @@ export default css`
 		width: 100%;
 	}
 
-	.lite-text {
-		color: #333;
-		font-size: 200px;
-		letter-spacing: 100px;
-		opacity: 0.1;
+	p {
 		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		font-weight: 800;
-		z-index: -1;
+		z-index: 1;
+		cursor: pointer;
 	}
 
 	.close {
-		width: 50px;
-		position: absolute;
 		right: 80px;
 		top: 50px;
-		cursor: pointer;
 	}
 
-	.open {
-		width: 30px;
-		cursor: pointer;
+	div {
+		display: flex;
+		justify-content: end;
 	}
 `
