@@ -16,8 +16,13 @@
 <body>
 	<image-modal></image-modal>
 	<full-screen-menu-popout></full-screen-menu-popout>
-	<bp-header id="to-top"></bp-header>
 	<main>
+		<header id="to-top">
+			<div>
+				<h1>Brent Perry</h1>
+				<h1>Game Developer</h1>
+			</div>
+		</header>
 		<section id="about">
 			<div>
 				<figure>
@@ -28,19 +33,33 @@
 				<p>Victoria B.C. Canada</p>
 			</div>
 			<div>
-				<h2>I'm a full stack developer</h2>
-				<p>I work with mostly Node.js, Typescript, Css, and Html</p>
-				<p>I also like to work with Unity(C#) and Unreal Engine(C++) on the side</p>
+				<h2>C#/Unity</h2>
+				<p>Also: JS, NODE.JS, TYPESCRIPT, HTML, CSS</p>
 				<p>Email me at <a href="mailto:brentperry92@gmail.com">brentperry92@gmail.com</a></p>
 			</div>
 		</section>
 		<section>
-			<div class="featured_content">
-				<h1>Featured</h1>
-				<video autoplay muted loop>
-					<source src="/assets/videos/Brent-VSCovid Recording.mov" type="video/mp4">
+			<div class="video_content">
+				<h1>VS Covid Game</h1>
+				<video muted controls>
+					<source src="/assets/videos/vs_covid.mov" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
+			</div>
+			<div class="video_content">
+				<h1>Clicky Click Minigame</h1>
+				<video muted controls>
+					<source src="/assets/videos/clicky_click.mov" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="project_wrapper">
+				<enlarge-image 
+					src="/x/assets/images-small/projects/clicky_click.jpg"
+					alt="Clicky Click"
+					title="Clicky Click"
+					large="/x/assets/images-large/projects/clicky_click.jpg">
+				</enlarge-image>
 			</div>
 			<div class="project_wrapper">
 				<enlarge-image 
@@ -83,8 +102,20 @@
 				</enlarge-image>
 			</div>
 		</section>
+		<footer>
+			<div>
+				<p>© All rights reserved</p>
+			</div>
+			<div>
+				<a target="_blank" href="https://github.com/brent-perry">Github</a>
+				<a target="_blank" href="https://discordapp.com/users/#1039">Discord</a>
+				<a href="mailto:brentperry92@gmail.com">Email</a>
+				<a target="_blank" href="https://www.linkedin.com/in/brent-perry-5b17761a2/">Linkedin</a>
+				<a target="_blank" href="https://simmer.io/@brentperry">Games</a>
+				<a target="_blank" href="/assets/resume/bp_resume.pdf">Resume</a>
+			</div>
+		</footer>
 	</main>
-	<bp-footer></bp-footer>
 
 </body>
 

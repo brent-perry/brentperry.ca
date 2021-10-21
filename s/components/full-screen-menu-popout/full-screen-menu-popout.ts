@@ -35,11 +35,14 @@ export class FullScreenMenuPopout extends LitElement {
 					<li>
 						<a target="_blank" href="/assets/resume/Brent Perry.Resume.pdf">Resume</a>
 					</li>
+					<li>
+						<a target="_blank" href="https://simmer.io/@brentperry">Games</a>
+					</li>
 				</ol>
 				<p class="close" @click="${this.close}">Close</p>
 			</nav>
 			<div>
-				<p class="open" @click="${this.open}">Open</p>
+				<p class="open" @click="${this.open}">Menu</p>
 			</div>
 
 		`

@@ -11,7 +11,7 @@ html {
 	font-size: 1em;
 }
 
-body > * {
+body>* {
 	position: relative;
 	z-index: 0;
 }
@@ -26,6 +26,10 @@ body {
 	font-size: 1.4rem;
 	margin: 0;
 	padding: 0;
+}
+
+main {
+	background-color: #0000007c;
 }
 
 section {
@@ -44,23 +48,69 @@ a {
 }
 
 h2 {
-	color: #202020;
+	color: #ffffff;
 }
 
 p {
 	color: #ffffff;
 }
 
-/* HEADER */
-
-bp-header {
-	position: relative;
-	z-index: 2;
-}
+/* NAV */
 
 full-screen-menu-popout {
 	position: unset;
 }
+
+/* HEADER */
+
+header {
+	position: relative;
+	z-index: 2;
+	padding: 2em;
+	text-align: center;
+}
+
+header>h1 {
+	color: #ffffff;
+	font-weight: 900;
+	line-height: 2rem;
+	letter-spacing: 2px;
+}
+
+/* FOOTER */
+
+footer {
+	align-items: center;
+	display: flex;
+	padding: 2em;
+	justify-content: space-between;
+}
+
+footer>div:nth-of-type(2) a {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+footer>div:nth-of-type(3) {
+	text-align: end;
+}
+
+footer>a {
+	font-weight: 600;
+	text-decoration: none;
+}
+
+footer>a, footer>p {
+	letter-spacing: .1rem;
+	color: #ffffff;
+	width: 100%;
+	margin: 4px;
+}
+
+footer>a:hover {
+	text-decoration: underline #ffffff 3px;
+}
+
 /* 404 */
 
 #error {
@@ -78,8 +128,7 @@ full-screen-menu-popout {
 }
 
 #error>a:hover {
-	text-decoration: underline #202020 10px;
-
+	text-decoration: underline #ffffff 10px;
 }
 
 /* MODAL */
@@ -92,17 +141,17 @@ image-modal {
 /* BRENT WORK */
 
 video {
-	width: 700px;
+	width: 300px;
 }
 
-.featured_content {
+.video_content {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	flex-wrap: wrap;
 }
 
-.featured_content h1 {
+.video_content h1 {
 	width: 100%;
 	text-align: center;
 }
@@ -121,7 +170,7 @@ video {
 }
 
 .project_wrapper>a:hover {
-	text-decoration: underline #202020 3px;
+	text-decoration: underline #ffffff 3px;
 }
 
 .project_link {
@@ -159,9 +208,8 @@ figure {
 }
 
 #about a {
-	color: #202020;
+	color: #ffffff;
 }
-
 
 /* MEDIA QUERIES */
 
@@ -169,4 +217,13 @@ figure {
 	video {
 		width: 475px;
 	}
-  }
+}
+
+@media screen and (max-width: 713px) {
+	footer {
+		flex-direction: column-reverse;
+	}
+	footer>div {
+		margin-top: 1em;
+	}
+}

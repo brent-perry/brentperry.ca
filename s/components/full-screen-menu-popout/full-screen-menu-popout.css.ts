@@ -64,6 +64,10 @@ export default css`
 		top: 50px;
 	}
 
+	.open {
+		padding-right: 50px;
+	}
+
 	div {
 		display: flex;
 		justify-content: end;
