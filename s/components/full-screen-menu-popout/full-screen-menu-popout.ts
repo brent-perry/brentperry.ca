@@ -33,7 +33,7 @@ export class FullScreenMenuPopout extends LitElement {
 						<a target="_blank" href="https://discordapp.com/users/#1039">Discord</a>
 					</li>
 					<li>
-						<a target="_blank" href="/assets/resume/Brent Perry.Resume.pdf">Resume</a>
+						<a target="_blank" href="/assets/resume/bp_resume.pdf">Resume</a>
 					</li>
 					<li>
 						<a target="_blank" href="https://simmer.io/@brentperry">Games</a>

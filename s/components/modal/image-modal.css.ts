@@ -9,9 +9,13 @@ export default css`
 		left: 50%;
 		z-index: 1;
 		font-size: 2em;
-		bottom: 5%;
+		bottom: 0;
 		transform: translate(-50%, -50%);
-		letter-spacing: .1rem;
+		letter-spacing: 2px;
+		position: absolute;
+		background-color: #000000c1;
+		border-radius: 8px;
+		padding: 20px; 
 	}
 
 	h1:hover {

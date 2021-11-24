@@ -27,14 +27,13 @@ export default css`
 		z-index: 1;
 		opacity: 0;
 		font-size: 1em;
-		background-color: #757171c1;
+		background-color: #000000c1;
 		border-radius: 8px;
 		padding: 8px;
 	}
 
 	img {
 		transition: all .4s ease-out;
-		margin: 1em;
 		width: 300px;
 		height: 300px;
 		cursor: pointer;

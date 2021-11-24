@@ -21,7 +21,6 @@ export default css`
 	nav[data-open] {
 		display: flex;
 		right: 0;
-		transition: right 1s;
 	}
 
 	li {
@@ -42,7 +41,7 @@ export default css`
 		content: '';
 		height: 3px;
 		width: 0;
-		background: #ff0095;
+		background: #00cc11;
 		position: absolute;
 		bottom: 0;
 		left: 0;
