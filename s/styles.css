@@ -18,10 +18,6 @@ body>* {
 
 body {
 	background-color: black;
-	/* background-image: url(/x/assets/images-large/backgrounds/background.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed; */
 	line-height: 1.5rem;
 	letter-spacing: 2px;
 	font-size: 1.4rem;
@@ -60,6 +56,79 @@ p {
 
 full-screen-menu-popout {
 	position: unset;
+}
+
+
+
+nav {
+	top: -100%;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	z-index: 2;
+	justify-content: center;
+	text-align: center;
+	align-items: center;	
+	transition: top 1s;
+}
+
+nav[data-open] {
+	display: flex;
+	right: 0;
+}
+
+ol li {
+	list-style: none;
+	margin: 1.5em;
+}
+
+ol li a {
+	text-decoration: none;
+	font-size: 40px;
+	color: #ffffff;
+	padding: 10px;
+	letter-spacing: 5px;
+	position: relative;
+}
+
+ol li a::after {
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #00cc11;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: width 0.5s;
+}
+
+ol li a:hover::after {
+	width: 100%;
+}
+
+nav p {
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+}
+
+#close_button {
+	right: 80px;
+	top: 50px;
+}
+
+#open_button {
+	padding-right: 50px;
+}
+
+#open_button_wrapper:hover {
+	cursor: pointer;
+}
+
+#open_button_wrapper {
+	display: flex;
+	justify-content: end;
 }
 
 /* HEADER */

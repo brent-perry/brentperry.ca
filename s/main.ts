@@ -1,14 +1,10 @@
 import {CustomTerminal} from "./components/terminal/custom-terminal.js"
 import {EnlargeImage} from "./components/enlarge-image/enlarge-image.js"
 import {ImageModal} from "./components/modal/image-modal.js"
-import {FullScreenMenuPopout} from "./components/full-screen-menu-popout/full-screen-menu-popout.js"
-
 
 customElements.define("custom-terminal", CustomTerminal)
 customElements.define("image-modal", ImageModal)
 customElements.define("enlarge-image", EnlargeImage)
-customElements.define("full-screen-menu-popout", FullScreenMenuPopout)
-
 
 
 const modal: ImageModal = document.querySelector('image-modal')
@@ -24,3 +20,24 @@ modal.onUpdate = opened => {
 	else
 		header.removeAttribute("hidden")
 }
+
+
+
+let menu = document.getElementById("menu")
+let openMenuButton = document.getElementById("open_button")
+let closeMenuButton = document.getElementById("close_button")
+function CloseMenu() {
+	menu.style.top = "-100vh"
+}
+function OpenMenu() {
+	menu.style.top = "0"
+	console.log("clicked")
+}
+
+openMenuButton.addEventListener("click", () => {
+	OpenMenu()
+})
+
+closeMenuButton.addEventListener("click", () => {
+	CloseMenu()
+})
