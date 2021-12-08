@@ -5,6 +5,8 @@ export default css`
 	}
 
 	h1 {
+		line-height: 1em;
+		text-align: center;
 		position: absolute;
 		left: 50%;
 		z-index: 1;
@@ -38,4 +40,36 @@ export default css`
 		width: 100%;
 		height: 100%;
 	}
+
+	@media screen and (max-width: 840px) {
+		h1 {
+			line-height: 1em;
+			text-align: center;
+			padding: 10px;
+			font-size: 1.5em;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		h1 {
+			line-height: 1em;
+			text-align: center;
+			padding: 10px;
+			font-size: 1em;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		h1 {
+			line-height: 1em;
+			text-align: center;
+			padding: 10px;
+			font-size: 1em;
+		}
+
+		img {
+			height: 50%;
+			transform: rotate(270deg) translateX(140px) translateY(-254px);
+		}
+}
 `

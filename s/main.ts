@@ -1,8 +1,6 @@
-import {CustomTerminal} from "./components/terminal/custom-terminal.js"
 import {EnlargeImage} from "./components/enlarge-image/enlarge-image.js"
 import {ImageModal} from "./components/modal/image-modal.js"
 
-customElements.define("custom-terminal", CustomTerminal)
 customElements.define("image-modal", ImageModal)
 customElements.define("enlarge-image", EnlargeImage)
 
@@ -26,12 +24,14 @@ modal.onUpdate = opened => {
 let menu = document.getElementById("menu")
 let openMenuButton = document.getElementById("open_button")
 let closeMenuButton = document.getElementById("close_button")
+let openButtonWrapper = document.getElementById("open_button_wrapper")
 function CloseMenu() {
 	menu.style.top = "-100vh"
+	openButtonWrapper.style.zIndex = "999"
 }
 function OpenMenu() {
 	menu.style.top = "0"
-	console.log("clicked")
+	openButtonWrapper.style.zIndex = "0"
 }
 
 openMenuButton.addEventListener("click", () => {
