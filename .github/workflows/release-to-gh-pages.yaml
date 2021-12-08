@@ -22,9 +22,11 @@ jobs:
       shell: bash
       run: npm ci && npm run build
 
-    - name: 🚚 track node_modules
+    - name: 🚚 tracking ignored stuff
       shell: bash
-      run: sed -i.bak -e '/^\/node_modules$/d' .gitignore 
+      run: |
+        sed -i.bak -e '/^\/node_modules$/d' .gitignore && \ 
+        sed -i.bak -e '/^\/x$/d' .gitignore
 
     - name: 🚀 gh-pages deployment
       uses: JamesIves/github-pages-deploy-action@4.1.6
