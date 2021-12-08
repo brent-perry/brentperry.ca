@@ -1,0 +1,30 @@
+name: release to gh-pages
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: 🛎️ checkout source
+      uses: actions/checkout@v2
+
+    - name: 🔧 setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: 17
+
+    - name: 📦 dependencies and build
+      shell: bash
+      run: npm ci && npm run build
+
+    - name: 🚀 gh-pages deployment
+      uses: JamesIves/github-pages-deploy-action@4.1.6
+      with:
+        branch: gh-pages
+        folder: .
+        single-commit: true
