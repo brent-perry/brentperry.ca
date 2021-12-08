@@ -25,7 +25,7 @@ jobs:
     - name: 🚚 tracking ignored stuff
       shell: bash
       run: |
-        sed -i.bak -e '/^\/node_modules$/d' .gitignore && \ 
+        sed -i.bak -e '/^\/node_modules$/d' .gitignore
         sed -i.bak -e '/^\/x$/d' .gitignore
 
     - name: 🚀 gh-pages deployment
