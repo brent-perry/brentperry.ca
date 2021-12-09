@@ -38,7 +38,9 @@ export class EnlargeImage extends LitElement {
 
 		return html`
 			<div>
-				<h1>${this.title}</h1>
+				<h1 @click=${this.enlargeImage}>
+					${this.title}
+				</h1>
 				<img
 					@click=${this.enlargeImage}
 					src="${this.src}"
