@@ -26,7 +26,7 @@ export default css`
 		position: absolute;
 		z-index: 1;
 		opacity: 0;
-		font-size: 1em;
+		font-size: 18px;
 		background-color: #000000c1;
 		border-radius: 8px;
 		padding: 8px;
@@ -34,9 +34,29 @@ export default css`
 
 	img {
 		transition: all .4s ease-out;
-		width: 300px;
-		height: 300px;
+		max-width: 100%;
+		height: 100%;
 		cursor: pointer;
+		object-fit: cover;
 	}
-	
+
+	@media screen and (max-width: 1000px) {
+		h1 {
+			font-size: 1rem;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		h1 {
+			font-size: .9rem;
+			padding: 4px;
+		}
+	}
+
+	@media screen and (max-width: 640px) {
+		h1 {
+			font-size: .8rem;
+		}
+	}
+
 	`

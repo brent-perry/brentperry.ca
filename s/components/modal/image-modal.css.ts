@@ -10,7 +10,7 @@ export default css`
 		position: absolute;
 		left: 50%;
 		z-index: 1;
-		font-size: 2em;
+		font-size: 18px;
 		bottom: 0;
 		transform: translate(-50%, -50%);
 		letter-spacing: 2px;
@@ -43,33 +43,13 @@ export default css`
 
 	@media screen and (max-width: 840px) {
 		h1 {
-			line-height: 1em;
-			text-align: center;
 			padding: 10px;
-			font-size: 1.5em;
 		}
 	}
 
-	@media screen and (max-width: 600px) {
-		h1 {
-			line-height: 1em;
-			text-align: center;
-			padding: 10px;
-			font-size: 1em;
-		}
-	}
-
-	@media screen and (max-width: 400px) {
-		h1 {
-			line-height: 1em;
-			text-align: center;
-			padding: 10px;
-			font-size: 1em;
-		}
-
+	@media screen and (max-width: 515px) {
 		img {
-			height: 50%;
-			transform: rotate(270deg) translateX(140px) translateY(-254px);
+			height: 35%;
 		}
 }
 `
