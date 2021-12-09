@@ -55,7 +55,7 @@ export default css`
 
 	@media screen and (max-width: 640px) {
 		h1 {
-			font-size: .8rem;
+			font-size: .7rem;
 		}
 	}
 
